@@ -14,7 +14,7 @@ def main():
     kk_img = pg.image.load("fig/3.png")    #こうかとん画像の読み込み
     kk_img = pg.transform.flip(kk_img, True, False) #こうかとん画像を反転
     kk_rct = kk_img.get_rect()
-    #kk_rct.center = 300, 200
+    kk_rct.center = 300, 200
     tmr = 0
     while True:
         for event in pg.event.get():
@@ -25,7 +25,7 @@ def main():
         screen.blit(bg_img, [x+3200, 0])
         screen.blit(bg_img2, [x + 4800, 0])
 
-        screen.blit(kk_img, [300,200]) #こうかとんおを300, 200の位置に描画
+        screen.blit(kk_img, kk_rct) #こうかとんおを300, 200の位置に描画
         pg.display.update()
         tmr += 1        
         clock.tick(200) #FPSを200に変更
