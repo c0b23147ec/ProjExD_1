@@ -40,7 +40,7 @@ def main():
         screen.blit(kk_img, kk_rct) #こうかとんおを300, 200の位置に描画
         pg.display.update()
         tmr += 1        
-        clock.tick(500) #FPSを200に変更
+        clock.tick(200) #FPSを200に変更
 
 
 if __name__ == "__main__":
