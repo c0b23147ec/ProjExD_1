@@ -13,6 +13,8 @@ def main():
     bg_img2 = pg.transform.flip(bg_img, True, False)
     kk_img = pg.image.load("fig/3.png")    #こうかとん画像の読み込み
     kk_img = pg.transform.flip(kk_img, True, False) #こうかとん画像を反転
+    kk_rct = kk_img.get_rect()
+    #kk_rct.center = 300, 200
     tmr = 0
     while True:
         for event in pg.event.get():
